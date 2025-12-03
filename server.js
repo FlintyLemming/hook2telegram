@@ -11,7 +11,6 @@ const config = {
   defaultChatId: process.env.TELEGRAM_CHAT_ID,
   apiKeys: parseApiKeys(process.env.API_KEYS),
   threadId: process.env.TELEGRAM_THREAD_ID ? Number(process.env.TELEGRAM_THREAD_ID) : undefined,
-  messagePrefix: process.env.MESSAGE_PREFIX || '',
   disablePreview: process.env.DISABLE_WEB_PAGE_PREVIEW !== 'false'
 };
 
@@ -92,7 +91,18 @@ async function handleWebhook(req, res, url) {
     return sendJson(res, error.statusCode || 400, { error: error.message });
   }
 
-  const { message, text, ...rest } = body || {};
+  const {
+    message,
+    text,
+    source,
+    subject,
+    parse_mode,
+    thread_id,
+    topic_id,
+    message_thread_id,
+    ...extraFields
+  } = body || {};
+
   const primary = message ?? text;
   if (primary === undefined || primary === null) {
     return sendJson(res, 400, { error: 'Payload must include a message field' });
@@ -103,13 +113,21 @@ async function handleWebhook(req, res, url) {
     return sendJson(res, 400, { error: 'Message is empty after trimming' });
   }
 
-  const extra = Object.keys(rest || {}).length ? `\n\n---\n${JSON.stringify(rest, null, 2)}` : '';
-  const prefixed = config.messagePrefix ? `${config.messagePrefix} ${safeMessage}` : safeMessage;
-  const combined = `${prefixed}${extra}`;
+  const safeSource = source !== undefined && source !== null ? String(source).trim() : '';
+  const safeSubject = subject !== undefined && subject !== null ? String(subject).trim() : '';
+
+  const headerParts = [];
+  if (safeSource) headerParts.push(`[${safeSource}]`);
+  if (safeSubject) headerParts.push(safeSubject);
+  const header = headerParts.join(' ');
+
+  const baseMessage = header ? `${header}\n${safeMessage}` : safeMessage;
+  const extra = Object.keys(extraFields || {}).length ? `\n\n---\n${JSON.stringify(extraFields, null, 2)}` : '';
+  const combined = `${baseMessage}${extra}`;
   const textToSend = combined.length > 3900 ? `${combined.slice(0, 3900)}\n\n[truncated]` : combined;
 
-  const threadId = resolveThreadId(rest);
-  const parseMode = typeof rest.parse_mode === 'string' ? rest.parse_mode : undefined;
+  const threadId = resolveThreadId({ thread_id, topic_id, message_thread_id });
+  const parseMode = typeof parse_mode === 'string' ? parse_mode : undefined;
 
   const deliveryId = randomUUID();
   const receivedAt = Date.now();
@@ -149,11 +167,10 @@ async function handleWebhook(req, res, url) {
 }
 
 function extractApiKey(req, url) {
-  const headerKey = req.headers['x-api-key'];
   const queryKey = url.searchParams.get('api_key');
   const segments = url.pathname.split('/').filter(Boolean);
   const pathKey = segments.length > 1 ? segments[1] : undefined;
-  return (headerKey || queryKey || pathKey || '').toString();
+  return (queryKey || pathKey || '').toString();
 }
 
 async function readJsonBody(req) {
@@ -256,8 +273,8 @@ function hasChatIds(map) {
   return false;
 }
 
-function resolveThreadId(restPayload) {
-  const value = restPayload?.thread_id ?? restPayload?.topic_id ?? restPayload?.message_thread_id;
+function resolveThreadId(payload) {
+  const value = payload?.thread_id ?? payload?.topic_id ?? payload?.message_thread_id;
   if (value === undefined || value === null) return config.threadId;
 
   const maybeNumber = Number(value);
