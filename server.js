@@ -97,6 +97,7 @@ async function handleWebhook(req, res, url) {
     source,
     subject,
     parse_mode,
+    silence,
     thread_id,
     topic_id,
     message_thread_id,
@@ -138,6 +139,7 @@ async function handleWebhook(req, res, url) {
       text: textToSend,
       threadId,
       parseMode,
+      silence: Boolean(silence),
       disablePreview: config.disablePreview
     });
 
@@ -198,13 +200,14 @@ async function readJsonBody(req) {
   });
 }
 
-async function sendToTelegram({ chatId, text, threadId, parseMode, disablePreview }) {
+async function sendToTelegram({ chatId, text, threadId, parseMode, silence, disablePreview }) {
   const payload = {
     chat_id: chatId,
     text,
     disable_web_page_preview: disablePreview,
     message_thread_id: threadId,
-    parse_mode: parseMode
+    parse_mode: parseMode,
+    disable_notification: silence || undefined
   };
 
   Object.keys(payload).forEach((key) => payload[key] === undefined && delete payload[key]);

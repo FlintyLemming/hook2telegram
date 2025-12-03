@@ -27,7 +27,7 @@
    ```bash
    curl -X POST "http://localhost:3000/webhook/my-key" \
      -H "Content-Type: application/json" \
-     -d '{ "source": "demo", "subject": "hello", "message": "hello from webhook" }'
+     -d '{ "source": "demo", "subject": "hello", "message": "hello from webhook", "silence": false }'
    ```
    返回 `{"ok":true,"deliveryId":"..."}` 即表示已转发。
 
@@ -36,7 +36,7 @@
   - 认证：在查询参数 `?api_key=` 或路径段 `/webhook/{key}` 提供 key（无需 `X-API-Key` 头）。若未配置 `API_KEYS`，服务将不校验（不建议生产环境）。
   - 请求头：`Content-Type: application/json`
   - 必填字段：`message`（或 `text`），会被转换成字符串并去掉首尾空格。
-  - 可选字段：`source`（显示为 `[source]`）、`subject`（显示在同一行 source 后）、`parse_mode`, `thread_id/topic_id/message_thread_id`（覆盖环境变量里的线程 ID），其他字段会作为 JSON 片段附在消息末尾。
+  - 可选字段：`source`（显示为 `[source]`）、`subject`（显示在同一行 source 后）、`silence`（布尔，true 时静默发送，无通知/无声音）、`parse_mode`, `thread_id/topic_id/message_thread_id`（覆盖环境变量里的线程 ID），其他字段会作为 JSON 片段附在消息末尾。
   - 发送格式示例：  
     ```
     [<source>] <subject>
