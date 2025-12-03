@@ -18,7 +18,7 @@
    - `TELEGRAM_BOT_TOKEN`：你的 Bot Token。
    - `TELEGRAM_CHAT_ID`：目标聊天/频道/群的 chat id。
    - `API_KEYS`：用逗号分隔。只需一个 key 时填 `my-key`，若想把不同 key 绑定到不同聊天，可写 `foo:123,bar:456`。
-2. 启动服务（Node.js >=18，无额外依赖）：  
+2. 启动服务（Node.js >=18，无额外依赖；自动读取当前目录的 `.env`）：  
    ```bash
    npm start
    # 或 NODE_ENV=development node server.js
@@ -61,3 +61,17 @@
 - 建议放在能访问 Telegram API 的中转机上，对外只开放 80/443 或代理后的路径。
 - 用 systemd/pm2/docker 守护运行，确保 `.env` 不随代码仓库提交。
 - 如果需要多租户/多聊天通道，直接在 `API_KEYS` 配置多组 `key:chatId` 即可复用同一个服务实例。
+
+## Docker 打包运行
+1. 构建镜像（在代码根目录）：  
+   ```bash
+   docker build -t hook2telegram .
+   ```
+2. 运行容器，传入环境变量或挂载 `.env`：  
+   ```bash
+   docker run -d --name hook2telegram \
+     -p 3000:3000 \
+     --env-file ./.env \
+     hook2telegram
+   ```
+   如需换端口：`-p 8080:3000`，或设置 `PORT=8080`。

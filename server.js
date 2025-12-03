@@ -1,6 +1,9 @@
 import { createServer } from 'node:http';
+import { existsSync, readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import { URL } from 'node:url';
+
+loadEnvFile();
 
 const config = {
   port: Number(process.env.PORT || 3000),
@@ -270,4 +273,23 @@ function recordDelivery(entry) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function loadEnvFile(path = `${process.cwd()}/.env`) {
+  if (!existsSync(path)) return;
+  const contents = readFileSync(path, 'utf8');
+  contents
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith('#'))
+    .forEach((line) => {
+      const idx = line.indexOf('=');
+      if (idx === -1) return;
+      const key = line.slice(0, idx).trim();
+      const rawValue = line.slice(idx + 1).trim();
+      const value = rawValue.replace(/^['"]|['"]$/g, '');
+      if (key && !(key in process.env)) {
+        process.env[key] = value;
+      }
+    });
 }
