@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!--2dJnXuh0xUGu8xW9tziNh-->
+<html lang="en" class="light" style="color-scheme: light;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="https://agentcraft.pro/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="stylesheet" href="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/868c5c67904b69f6.css" data-precedence="next"><link rel="stylesheet" href="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/4353baf6ef7428c2.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/webpack-a732b2f6a648f4cd.js"><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/243221218.js" type="text/javascript" id="hs-analytics"></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/banner.js" type="text/javascript" id="cookieBanner-243221218" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="243221218" data-hsjs-env="prod" data-hsjs-hublet="na2"></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/collectedforms.js" type="text/javascript" id="CollectedForms-243221218" crossorigin="anonymous" data-leadin-portal-id="243221218" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="243221218" data-hsjs-env="prod" data-hsjs-hublet="na2"></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/4bd1b696-100b9d70ed4e49c1.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/1255-f206d8cb7c37a3ff.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/main-app-f3336e172256d2ab.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/4999-11d5e15c23830f1f.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/2081-484426da4f809832.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/977-6d6e52e05247dfda.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/layout-83fed7b4914c222d.js" async=""></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/page-fca5575cbe72f7de.js" async=""></script><meta name="next-size-adjust" content=""><title>Telegram Webhook Relay | AgentCraft</title><meta name="description" content="Deliver any webhook payload directly to your Telegram chat. Configure your chat ID once, POST JSON with a message field, and we handle instant delivery."><meta name="keywords" content="AgentCraft,n8n automations,SaaS builder,automation SaaS,workflow monetization,no-code SaaS"><meta name="robots" content="index, follow"><link rel="canonical" href="https://agentcraft.pro/tg-webhook"><meta property="og:title" content="AgentCraft | Launch SaaS Products from n8n Automations"><meta property="og:description" content="Convert n8n workflows into multi-tenant SaaS with billing, dashboards, and analytics powered by AgentCraft."><meta property="og:url" content="https://agentcraft.pro"><meta property="og:site_name" content="AgentCraft"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://agentcraft.pro/og/agentcraft-og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AgentCraft SaaS platform for n8n automations"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@agentcraft"><meta name="twitter:creator" content="@agentcraft"><meta name="twitter:title" content="AgentCraft | Launch SaaS from n8n Automations"><meta name="twitter:description" content="Productize your n8n automations as SaaS with AgentCraft billing, dashboards, and analytics."><meta name="twitter:image" content="https://agentcraft.pro/og/agentcraft-og.jpg"><link rel="shortcut icon" href="https://agentcraft.pro/favicon.png"><link rel="icon" href="https://agentcraft.pro/favicon.png"><link rel="apple-touch-icon" href="https://agentcraft.pro/favicon.png"><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/saas-redirect.js"></script><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/polyfills-42372ed130431b0a.js" nomodule=""></script><link rel="preload" href="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/243221218_002.js" as="script"><style data-id="immersive-translate-input-injected-css">.immersive-translate-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.immersive-translate-attach-loading::after {
+  content: " ";
+
+  --loading-color: #f78fb6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto;
+  position: relative;
+  color: white;
+  left: -100px;
+  box-sizing: border-box;
+  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-2000%, -50%);
+  z-index: 100;
+}
+
+.immersive-translate-loading-spinner {
+  vertical-align: middle !important;
+  width: 10px !important;
+  height: 10px !important;
+  display: inline-block !important;
+  margin: 0 4px !important;
+  border: 2px rgba(221, 244, 255, 0.6) solid !important;
+  border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+  border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+  animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+}
+
+@-webkit-keyframes immersive-translate-loading-animation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes immersive-translate-loading-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.immersive-translate-input-loading {
+  --loading-color: #f78fb6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto;
+  position: relative;
+  color: white;
+  left: -100px;
+  box-sizing: border-box;
+  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+}
+
+@keyframes immersiveTranslateShadowRolling {
+  0% {
+    box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  12% {
+    box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  36% {
+    box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+      100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+      110px 0 var(--loading-color), 100px 0 var(--loading-color);
+  }
+
+  62% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+      120px 0 var(--loading-color), 110px 0 var(--loading-color);
+  }
+
+  75% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      130px 0 var(--loading-color), 120px 0 var(--loading-color);
+  }
+
+  87% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+  }
+
+  100% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.immersive-translate-toast {
+  display: flex;
+  position: fixed;
+  z-index: 2147483647;
+  left: 0;
+  right: 0;
+  top: 1%;
+  width: fit-content;
+  padding: 12px 20px;
+  margin: auto;
+  overflow: auto;
+  background: #fef6f9;
+  box-shadow: 0px 4px 10px 0px rgba(0, 10, 30, 0.06);
+  font-size: 15px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.immersive-translate-toast-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.immersive-translate-toast-hidden {
+  margin: 0 20px 0 72px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.immersive-translate-toast-close {
+  color: #666666;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .immersive-translate-toast {
+    top: 0;
+    padding: 12px 0px 0 10px;
+  }
+  .immersive-translate-toast-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .immersive-translate-toast-hidden {
+    margin: 10px auto;
+  }
+}
+
+.immersive-translate-dialog {
+  position: fixed;
+  z-index: 2147483647;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.immersive-translate-modal {
+  display: none;
+  position: fixed;
+  z-index: 2147483647;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+
+.immersive-translate-modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 40px 24px 24px;
+  border-radius: 12px;
+  width: 350px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .immersive-translate-modal-content {
+    margin: 25% auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .immersive-translate-modal-content {
+    width: 80vw !important;
+    margin: 20vh auto !important;
+    padding: 20px 12px 12px !important;
+  }
+
+  .immersive-translate-modal-title {
+    font-size: 14px !important;
+  }
+
+  .immersive-translate-modal-body {
+    font-size: 13px !important;
+    max-height: 60vh !important;
+  }
+
+  .immersive-translate-btn {
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+    margin: 0 4px !important;
+  }
+
+  .immersive-translate-modal-footer {
+    gap: 6px !important;
+    margin-top: 16px !important;
+  }
+}
+
+.immersive-translate-modal .immersive-translate-modal-content-in-input {
+  max-width: 500px;
+}
+.immersive-translate-modal-content-in-input .immersive-translate-modal-body {
+  text-align: left;
+  max-height: unset;
+}
+
+.immersive-translate-modal-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.immersive-translate-modal-body {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 24px;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+  .immersive-translate-modal-body {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}
+
+.immersive-translate-close {
+  color: #666666;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.immersive-translate-close:hover,
+.immersive-translate-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.immersive-translate-modal-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.immersive-translate-btn {
+  width: fit-content;
+  color: #fff;
+  background-color: #ea4c89;
+  border: none;
+  font-size: 14px;
+  margin: 0 8px;
+  padding: 9px 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.immersive-translate-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.immersive-translate-btn:hover {
+  background-color: #f082ac;
+}
+.immersive-translate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.immersive-translate-btn:disabled:hover {
+  background-color: #ea4c89;
+}
+
+.immersive-translate-link-btn {
+  background-color: transparent;
+  color: #ea4c89;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+}
+
+.immersive-translate-cancel-btn {
+  /* gray color */
+  background-color: rgb(89, 107, 120);
+}
+
+.immersive-translate-cancel-btn:hover {
+  background-color: hsl(205, 20%, 32%);
+}
+
+.immersive-translate-action-btn {
+  background-color: transparent;
+  color: #ea4c89;
+  border: 1px solid #ea4c89;
+}
+
+.immersive-translate-btn svg {
+  margin-right: 5px;
+}
+
+.immersive-translate-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #ea4c89;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.immersive-translate-primary-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #ea4c89;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.immersive-translate-modal input[type="radio"] {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.immersive-translate-modal label {
+  cursor: pointer;
+}
+
+.immersive-translate-close-action {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.imt-image-status {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 16px !important;
+}
+.imt-image-status img,
+.imt-image-status svg,
+.imt-img-loading {
+  width: 28px !important;
+  height: 28px !important;
+  margin: 0 0 8px 0 !important;
+  min-height: 28px !important;
+  min-width: 28px !important;
+  position: relative !important;
+}
+.imt-img-loading {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
+  background-size: 28px 28px;
+  animation: image-loading-rotate 1s linear infinite !important;
+}
+
+.imt-image-status span {
+  color: var(--bg-2, #fff) !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  font-weight: 500 !important;
+  font-family: "PingFang SC", Arial, sans-serif !important;
+}
+
+.imt-primary-button {
+  display: flex;
+  padding: 12px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #ea4c89;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.imt-retry-text {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.imt-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imt-modal-content-text {
+  text-align: left;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@keyframes image-loading-rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.imt-linear-gradient-text {
+  background: linear-gradient(90deg, #00a6ff 0%, #c369ff 52.4%, #ff4590 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imt-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imt-linear-black-btn {
+  border-radius: 50px;
+  background: linear-gradient(66deg, #222 19%, #696969 94.25%);
+  height: 48px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+</style></head><body class="__className_8b3a0b"><div hidden=""><!--$--><!--/$--></div><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/webpack-a732b2f6a648f4cd.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[81901,[\"4999\",\"static/chunks/4999-11d5e15c23830f1f.js\",\"2081\",\"static/chunks/2081-484426da4f809832.js\",\"977\",\"static/chunks/977-6d6e52e05247dfda.js\",\"4174\",\"static/chunks/4174-1b26adeae3fb52d0.js\",\"4845\",\"static/chunks/4845-c52d443c007572c6.js\",\"7177\",\"static/chunks/app/layout-83fed7b4914c222d.js\"],\"ThemeProvider\"]\n3:I[93314,[\"4999\",\"static/chunks/4999-11d5e15c23830f1f.js\",\"2081\",\"static/chunks/2081-484426da4f809832.js\",\"977\",\"static/chunks/977-6d6e52e05247dfda.js\",\"4174\",\"static/chunks/4174-1b26adeae3fb52d0.js\",\"4845\",\"static/chunks/4845-c52d443c007572c6.js\",\"7177\",\"static/chunks/app/layout-83fed7b4914c222d.js\"],\"ClientLayoutWrapper\"]\n4:I[9766,[],\"\"]\n5:I[98924,[],\"\"]\n6:I[52619,[\"2619\",\"static/chunks/2619-04bc32f026a0d946.js\",\"2266\",\"static/chunks/app/tg-webhook/page-fca5575cbe72f7de.js\"],\"\"]\n13:I[57150,[],\"\"]\n:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/868c5c67904b69f6.css\",\"style\"]\n:HL[\"/_next/static/css/4353baf6ef7428c2.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"2dJnXuh0xUGu8xW9tziNh\",\"p\":\"\",\"c\":[\"\",\"tg-webhook\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"tg-webhook\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/868c5c67904b69f6.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/4353baf6ef7428c2.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"script\",null,{\"src\":\"/saas-redirect.js\"}]}],[\"$\",\"body\",null,{\"className\":\"__className_8b3a0b\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"light\",\"enableSystem\":true,\"children\":[\"$\",\"$L3\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]}]]}]]}],{\"children\":[\"tg-webhook\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"flex min-h-screen flex-col bg-gradient-to-br from-[#04040c] via-[#060a1c] to-[#101b3a] text-slate-100\",\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-40 border-b border-white/10 bg-[#050817]/80 backdrop-blur\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"#hero\",\"className\":\"flex items-center gap-2 font-semibold text-slate-200\",\"children\":[[\"$\",\"span\",null,{\"className\":\"rounded-full bg-cyan-400/10 px-2 py-1 text-xs uppercase tracking-[0.18em] text-cyan-300\",\"children\":\"AgentCraft\"}],[\"$\",\"span\",null,{\"className\":\"text-sm font-medium text-slate-400\",\"children\":\"Telegram Webhook Relay\"}]]}],[\"$\",\"nav\",null,{\"className\":\"hidden items-center gap-6 text-sm font-medium text-slate-400 md:flex\",\"children\":[[\"$\",\"a\",\"#features\",{\"href\":\"#features\",\"className\":\"transition-colors hover:text-cyan-200\",\"children\":\"Features\"}],[\"$\",\"a\",\"#how-it-works\",{\"href\":\"#how-it-works\",\"className\":\"transition-colors hover:text-cyan-200\",\"children\":\"How it Works\"}],[\"$\",\"a\",\"#use-cases\",{\"href\":\"#use-cases\",\"className\":\"transition-colors hover:text-cyan-200\",\"children\":\"Use Cases\"}],[\"$\",\"a\",\"#pricing\",{\"href\":\"#pricing\",\"className\":\"transition-colors hover:text-cyan-200\",\"children\":\"Pricing\"}],[\"$\",\"a\",\"#faq\",{\"href\":\"#faq\",\"className\":\"transition-colors hover:text-cyan-200\",\"children\":\"FAQ\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-3\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"#how-it-works\",\"children\":\"Docs\",\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 hover:border-foreground h-9 rounded-md px-3 text-slate-300 hover:text-cyan-200 hover:bg-cyan-500/10\",\"ref\":null}],\"$L7\"]}]]}]}],\"$L8\",\"$L9\",\"$La\",\"$Lb\",\"$Lc\",\"$Ld\",\"$Le\",\"$Lf\",\"$L10\"]}],null,\"$L11\"]}],{},null,false]},null,false]},null,false],\"$L12\",false]],\"m\":\"$undefined\",\"G\":[\"$13\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"24:I[24431,[],\"OutletBoundary\"]\n26:I[15278,[],\"AsyncMetadataOutlet\"]\n28:I[24431,[],\"ViewportBoundary\"]\n2a:I[24431,[],\"MetadataBoundary\"]\n2b:\"$Sreact.suspense\"\n"])</script><script>self.__next_f.push([1,"7:[\"$\",\"$L6\",null,{\"href\":\"https://webhook-tg.saas.agentcraft.pro/end-user/dashboard\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":\"Login\",\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-9 rounded-md px-3 shadow-sm bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400\",\"ref\":null}]\n"])</script><script>self.__next_f.push([1,"8:[\"$\",\"section\",null,{\"id\":\"hero\",\"className\":\"relative overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#050816] via-[#07112b] to-[#111c3d]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-x-0 top-0 -z-10 h-[520px] bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.45),_transparent_55%)] blur-3xl\"}],[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-20 text-center md:pb-32 md:pt-32\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-2xl flex-col gap-6\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-cyan-200\",\"children\":\"Instant Telegram alerts\"}],[\"$\",\"h1\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 sm:text-5xl\",\"children\":\"Bridge any webhook to Telegram with one luminous endpoint\"}],[\"$\",\"p\",null,{\"className\":\"text-balance text-base text-slate-300 sm:text-lg\",\"children\":\"Configure your Telegram chat ID once, then forward every critical notification by POSTing a single message field. No bots to host, no rate-limit headaches—just reliable delivery when it matters.\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center gap-3 sm:flex-row\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"https://webhook-tg.saas.agentcraft.pro/end-user/dashboard\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":[\"Start routing alerts\",[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-arrow-right ml-2 h-4 w-4\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1ays0h\",{\"d\":\"M5 12h14\"}],[\"$\",\"path\",\"xquz4c\",{\"d\":\"m12 5 7 7-7 7\"}],\"$undefined\"]}]],\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-11 rounded-md px-8 shadow-lg shadow-cyan-500/30 bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400\",\"ref\":null}],[\"$\",\"$L6\",null,{\"href\":\"#how-it-works\",\"children\":\"See how it works\",\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 hover:text-background hover:border-foreground h-11 rounded-md px-8 border border-slate-500/60 bg-white/5 text-slate-200 hover:bg-white/10\",\"ref\":null}]]}],[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-6 text-left shadow-[0_0_40px_rgba(56,189,248,0.12)]\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs font-semibold uppercase tracking-[0.24em] text-slate-400\",\"children\":\"Example request\"}],[\"$\",\"pre\",null,{\"className\":\"mt-3 overflow-x-auto rounded-xl bg-[#0b1226] p-4 text-sm text-cyan-200 shadow-inner shadow-cyan-500/20\",\"children\":\"curl -X POST \\\"https://webhook-tg.saas.agentcraft.pro/webhook/20251108-84fd-4faa-9038-0ac04cc7b265\\\" \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -H \\\"X-API-Key: ac_sk_123456_76e240e4-1e45-47\\\" \\\\\\n  -d '{ \\\"message\\\": \\\"test\\\" }'\"}],\"$L14\"]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"9:[\"$\",\"section\",null,{\"id\":\"features\",\"className\":\"border-b border-white/10 bg-transparent py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-12 px-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-3xl flex-col gap-4 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Why teams choose us\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Purpose-built for webhook to Telegram delivery\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"Stop maintaining custom bots and brittle scripts. Keep your webhook logic simple while we handle Telegram delivery at scale.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid gap-6 md:grid-cols-3\",\"children\":[[\"$\",\"article\",\"Instant message delivery\",{\"className\":\"group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-zap h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1xq2db\",{\"d\":\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Instant message delivery\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Send a POST request with a JSON payload, and we deliver the message to Telegram within seconds.\"}]]}],[\"$\",\"article\",\"Secure chat binding\",{\"className\":\"group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-shield-check h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"oel41y\",{\"d\":\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"}],[\"$\",\"path\",\"dzmm74\",{\"d\":\"m9 12 2 2 4-4\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Secure chat binding\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Each webhook key is tied to your Telegram chat ID, preventing unwanted forwarding and keeping alerts private.\"}]]}],[\"$\",\"article\",\"Workflow friendly\",{\"className\":\"group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-workflow h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[\"$L15\",\"$L16\",\"$L17\",\"$undefined\"]}],\"$L18\",\"$L19\"]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"a:[\"$\",\"section\",null,{\"id\":\"how-it-works\",\"className\":\"border-b border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-12 px-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-3xl flex-col gap-4 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"No-code setup\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Three simple steps from webhook to Telegram chat\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"Bring your own automation platform, choose the chat that should receive messages, and let AgentCraft deliver the rest.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid gap-8 md:grid-cols-3\",\"children\":[[\"$\",\"article\",\"Add your Telegram chat\",{\"className\":\"relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur\",\"children\":[[\"$\",\"span\",null,{\"className\":\"inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Step 1\"}],[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-bot h-10 w-10 text-cyan-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"hb8ula\",{\"d\":\"M12 8V4H8\"}],[\"$\",\"rect\",\"enze0r\",{\"width\":\"16\",\"height\":\"12\",\"x\":\"4\",\"y\":\"8\",\"rx\":\"2\"}],[\"$\",\"path\",\"vft8re\",{\"d\":\"M2 14h2\"}],[\"$\",\"path\",\"4cs60a\",{\"d\":\"M20 14h2\"}],[\"$\",\"path\",\"1xurst\",{\"d\":\"M15 13v2\"}],[\"$\",\"path\",\"rq6x2g\",{\"d\":\"M9 13v2\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Add your Telegram chat\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Log in and paste the chat ID you want to receive notifications in. We generate a dedicated webhook endpoint for you.\"}]]}],[\"$\",\"article\",\"Call the webhook\",{\"className\":\"relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur\",\"children\":[[\"$\",\"span\",null,{\"className\":\"inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Step 2\"}],[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-workflow h-10 w-10 text-cyan-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"rect\",\"by2w9f\",{\"width\":\"8\",\"height\":\"8\",\"x\":\"3\",\"y\":\"3\",\"rx\":\"2\"}],[\"$\",\"path\",\"xkn7yn\",{\"d\":\"M7 11v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"rect\",\"1cgmvn\",{\"width\":\"8\",\"height\":\"8\",\"x\":\"13\",\"y\":\"13\",\"rx\":\"2\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Call the webhook\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"POST a JSON body like { \\\"message\\\": \\\"Server CPU at 85%\\\" } from any system. Additional fields are stored for logs.\"}]]}],[\"$\",\"article\",\"Telegram delivers\",{\"className\":\"relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur\",\"children\":[[\"$\",\"span\",null,{\"className\":\"inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Step 3\"}],[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-clock3 lucide-clock-3 h-10 w-10 text-cyan-300\",\"aria-hidden\":\"true\",\"children\":[\"$L1a\",\"$L1b\",\"$undefined\"]}],\"$L1c\",\"$L1d\"]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"b:[\"$\",\"section\",null,{\"id\":\"use-cases\",\"className\":\"border-b border-white/10 bg-transparent py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-12 px-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-3xl flex-col gap-4 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Where it shines\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Designed for high-signal notifications\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"Cut through noisy inboxes and surface the moments humans need to act on. The webhook relay keeps sensitive data inside Telegram.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid gap-6 md:grid-cols-3\",\"children\":[[\"$\",\"article\",\"Operational alerts\",{\"className\":\"flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-bell-ring h-10 w-10 text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"vwvbt9\",{\"d\":\"M10.268 21a2 2 0 0 0 3.464 0\"}],[\"$\",\"path\",\"5bb3ad\",{\"d\":\"M22 8c0-2.3-.8-4.3-2-6\"}],[\"$\",\"path\",\"11g9vi\",{\"d\":\"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326\"}],[\"$\",\"path\",\"tap9e0\",{\"d\":\"M4 2C2.8 3.7 2 5.7 2 8\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Operational alerts\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Forward infrastructure or CI/CD alerts straight to Telegram so on-call engineers react in seconds.\"}],[\"$\",\"ul\",null,{\"className\":\"mt-2 flex flex-col gap-2 text-sm text-slate-300\",\"children\":[[\"$\",\"li\",\"Connect monitoring tools with one webhook URL\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Connect monitoring tools with one webhook URL\"}]]}],[\"$\",\"li\",\"Broadcast to team chats or personal inboxes\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Broadcast to team chats or personal inboxes\"}]]}],[\"$\",\"li\",\"Keep context with structured payload storage\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Keep context with structured payload storage\"}]]}]]}]]}],[\"$\",\"article\",\"Business notifications\",{\"className\":\"flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-activity h-10 w-10 text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"169zse\",{\"d\":\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Business notifications\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Send payment confirmations, onboarding events, or CRM updates right to the people who need to know.\"}],[\"$\",\"ul\",null,{\"className\":\"mt-2 flex flex-col gap-2 text-sm text-slate-300\",\"children\":[\"$L1e\",\"$L1f\",\"$L20\"]}]]}],\"$L21\"]}]]}]}]\n"])</script><script>self.__next_f.push([1,"c:[\"$\",\"section\",null,{\"className\":\"border-b border-white/10 bg-gradient-to-r from-[#0b1226] via-[#111c3d] to-[#1b2558] py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-10 px-6 md:flex-row md:items-center md:gap-16\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex-1 space-y-6\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Built for reliability\"}],[\"$\",\"h2\",null,{\"className\":\"text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Observability and safety are included out of the box\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"Every delivery attempt is logged with status, latency, and payload metadata. Configure retention policies per webhook key, export logs, and receive weekly reliability summaries.\"}],[\"$\",\"div\",null,{\"className\":\"grid gap-4 sm:grid-cols-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold text-slate-100\",\"children\":\"Automatic retries\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm text-slate-300\",\"children\":\"Exponential backoff with jitter keeps your messages safe even when Telegram takes a pause.\"}]]}],[\"$\",\"div\",null,{\"className\":\"rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold text-slate-100\",\"children\":\"Delivery analytics\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm text-slate-300\",\"children\":\"Success rate, median latency, and failure reasons available directly in the dashboard.\"}]]}],[\"$\",\"div\",null,{\"className\":\"rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold text-slate-100\",\"children\":\"Access controls\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm text-slate-300\",\"children\":\"Rotate keys, restrict source IPs, and receive alerts when unauthorised calls happen.\"}]]}],[\"$\",\"div\",null,{\"className\":\"rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold text-slate-100\",\"children\":\"Human friendly logs\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm text-slate-300\",\"children\":\"Search payload history, resend messages, or download JSON for auditing in seconds.\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex-1 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_30px_80px_-35px_rgba(56,189,248,0.55)]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between\",\"children\":[[\"$\",\"div\",null,{\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-medium text-slate-400\",\"children\":\"30-day delivery success rate\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-4xl font-semibold text-slate-100\",\"children\":\"99.98%\"}]]}],[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-shield-check h-12 w-12 text-cyan-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"oel41y\",{\"d\":\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"}],[\"$\",\"path\",\"dzmm74\",{\"d\":\"m9 12 2 2 4-4\"}],\"$undefined\"]}]]}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-sm text-slate-300\",\"children\":\"Resilient delivery pipelines, monitoring integrations, and alerting for degraded performance keep your team informed without manual babysitting.\"}],[\"$\",\"div\",null,{\"className\":\"mt-8 rounded-2xl border border-dashed border-cyan-400/30 bg-[#0b1226]/80 p-6 text-sm text-slate-300\",\"children\":[\"$L22\",\"$L23\"]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"section\",null,{\"id\":\"pricing\",\"className\":\"border-b border-white/10 bg-transparent py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-4xl flex-col gap-10 px-6 text-center\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-3xl flex-col gap-4 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Pricing\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Simple pricing while we are in beta\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"Get started in minutes. No usage surprises—just straightforward pricing designed for lean teams.\"}]]}],[\"$\",\"div\",null,{\"className\":\"rounded-3xl border border-white/10 bg-white/5 p-10 shadow-[0_30px_80px_-40px_rgba(168,85,247,0.6)]\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-medium uppercase tracking-[0.24em] text-slate-400\",\"children\":\"Public beta\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 text-5xl font-semibold text-slate-100\",\"children\":\"Free\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 text-base text-slate-300\",\"children\":\"1,000 messages per month, delivery logs, retry automation, and a hosted helper bot.\"}],[\"$\",\"div\",null,{\"className\":\"mt-8 flex flex-col gap-3 text-sm text-slate-300\",\"children\":[[\"$\",\"p\",null,{\"children\":\"Need higher limits or on-premise deployment?\"}],[\"$\",\"p\",null,{\"children\":[\"Contact us via\",\" \",[\"$\",\"$L6\",null,{\"href\":\"mailto:support@agentcraft.pro\",\"className\":\"text-cyan-200 underline-offset-4 hover:underline\",\"children\":\"support@agentcraft.pro\"}],\".\"]}]]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"e:[\"$\",\"section\",null,{\"id\":\"faq\",\"className\":\"border-b border-white/10 bg-gradient-to-br from-[#0f1833] via-[#101e41] to-transparent py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-4xl flex-col gap-10 px-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-3xl flex-col gap-4 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Questions\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Answers before you ship\"}],[\"$\",\"p\",null,{\"className\":\"text-base text-slate-300 md:text-lg\",\"children\":\"If you need something custom, reach out—our team is happy to help.\"}]]}],[\"$\",\"div\",null,{\"className\":\"space-y-4\",\"children\":[[\"$\",\"details\",\"What payload format does the webhook accept?\",{\"className\":\"group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur\",\"children\":[[\"$\",\"summary\",null,{\"className\":\"cursor-pointer list-none text-base font-semibold text-slate-100\",\"children\":\"What payload format does the webhook accept?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm text-slate-300\",\"children\":\"Send a POST request with the Content-Type set to application/json. The body must contain a message field. Any other fields are stored and shown in delivery logs.\"}]]}],[\"$\",\"details\",\"Can I send messages to multiple Telegram chats?\",{\"className\":\"group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur\",\"children\":[[\"$\",\"summary\",null,{\"className\":\"cursor-pointer list-none text-base font-semibold text-slate-100\",\"children\":\"Can I send messages to multiple Telegram chats?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm text-slate-300\",\"children\":\"Not yet. Right now each account can bind the service to a single Telegram chat ID. Multi-chat routing is on our roadmap—reach out if you need it.\"}]]}],[\"$\",\"details\",\"Is message delivery reliable?\",{\"className\":\"group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur\",\"children\":[[\"$\",\"summary\",null,{\"className\":\"cursor-pointer list-none text-base font-semibold text-slate-100\",\"children\":\"Is message delivery reliable?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm text-slate-300\",\"children\":\"We queue and retry messages automatically. If Telegram is temporarily unavailable, we keep retrying with exponential backoff and show status updates in the dashboard.\"}]]}],[\"$\",\"details\",\"How do I find my Telegram chat ID?\",{\"className\":\"group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur\",\"children\":[[\"$\",\"summary\",null,{\"className\":\"cursor-pointer list-none text-base font-semibold text-slate-100\",\"children\":\"How do I find my Telegram chat ID?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm text-slate-300\",\"children\":\"Open the dashboard and follow the built-in step-by-step guide—we walk you through starting a helper bot and copying the chat ID in under a minute.\"}]]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"f:[\"$\",\"section\",null,{\"className\":\"bg-gradient-to-br from-[#1b1f51] via-[#151c3f] to-[#0b1126] py-20 md:py-28\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-4xl flex-col items-center gap-8 px-6 text-center\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200\",\"children\":\"Ready when you are\"}],[\"$\",\"h2\",null,{\"className\":\"text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl\",\"children\":\"Login, paste your chat ID, and route your first alert in under a minute\"}],[\"$\",\"p\",null,{\"className\":\"text-balance text-base text-slate-300 md:text-lg\",\"children\":\"Keep your incident response, sales updates, and customer workflows inside Telegram. We take care of the integration and reliability.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center gap-3 sm:flex-row\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"https://webhook-tg.saas.agentcraft.pro/end-user/dashboard\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":[\"Login\",[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-arrow-right ml-2 h-4 w-4\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1ays0h\",{\"d\":\"M5 12h14\"}],[\"$\",\"path\",\"xquz4c\",{\"d\":\"m12 5 7 7-7 7\"}],\"$undefined\"]}]],\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-11 rounded-md px-8 shadow-lg shadow-cyan-500/30 bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400\",\"ref\":null}],[\"$\",\"$L6\",null,{\"href\":\"mailto:support@agentcraft.pro\",\"children\":\"Talk to us\",\"className\":\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 hover:text-background hover:border-foreground h-11 rounded-md px-8 border border-slate-500/60 bg-white/5 text-slate-200 hover:bg-white/10\",\"ref\":null}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"10:[\"$\",\"footer\",null,{\"className\":\"border-t border-white/10 bg-[#050817] py-10\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto flex max-w-6xl flex-col gap-4 px-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between\",\"children\":[[\"$\",\"p\",null,{\"children\":[\"© \",2025,\" AgentCraft. All rights reserved.\"]}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-4\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"https://agentcraft.pro\",\"className\":\"transition hover:text-cyan-200\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":\"agentcraft.pro\"}],[\"$\",\"$L6\",null,{\"href\":\"mailto:support@agentcraft.pro\",\"className\":\"transition hover:text-cyan-200\",\"children\":\"support@agentcraft.pro\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"11:[\"$\",\"$L24\",null,{\"children\":[\"$L25\",[\"$\",\"$L26\",null,{\"promise\":\"$@27\"}]]}]\n12:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L28\",null,{\"children\":\"$L29\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]],[\"$\",\"$L2a\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$2b\",null,{\"fallback\":null,\"children\":\"$L2c\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"14:[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm text-slate-300\",\"children\":\"We forward the content to your Telegram chat instantly and store the payload for delivery history. Replace the webhook URL and API key with your own credentials before sending production traffic.\"}]\n15:[\"$\",\"rect\",\"by2w9f\",{\"width\":\"8\",\"height\":\"8\",\"x\":\"3\",\"y\":\"3\",\"rx\":\"2\"}]\n16:[\"$\",\"path\",\"xkn7yn\",{\"d\":\"M7 11v4a2 2 0 0 0 2 2h4\"}]\n17:[\"$\",\"rect\",\"1cgmvn\",{\"width\":\"8\",\"height\":\"8\",\"x\":\"13\",\"y\":\"13\",\"rx\":\"2\"}]\n18:[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Workflow friendly\"}]\n19:[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Trigger the webhook from Zapier, n8n, Make, or custom code. Works anywhere you can send HTTPS requests.\"}]\n1a:[\"$\",\"circle\",\"1mglay\",{\"cx\":\"12\",\"cy\":\"12\",\"r\":\"10\"}]\n1b:[\"$\",\"polyline\",\"1aq6pp\",{\"points\":\"12 6 12 12 16.5 12\"}]\n1c:[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Telegram delivers\"}]\n1d:[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"We send the message to your chat instantly, adding context like timestamps so your team can act fast.\"}]\n1e:[\"$\",\"li\",\"Create customer-specific channels with unique chat IDs\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Create customer-specific channels with unique chat IDs\"}]]}]\n1f:[\"$\",\"li\",\"Attach order references or invoice links in the payload\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Attach order references or invoice links in the payload\"}]]}]\n20:[\"$\",\"li\",\"Share instantly with sales or success teams\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Share instantly with sales or success teams\"}]]}]\n"])</script><script>self.__next_f.push([1,"21:[\"$\",\"article\",\"Human-in-the-loop workflows\",{\"className\":\"flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-life-buoy h-10 w-10 text-fuchsia-300\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"circle\",\"1mglay\",{\"cx\":\"12\",\"cy\":\"12\",\"r\":\"10\"}],[\"$\",\"path\",\"1ymg45\",{\"d\":\"m4.93 4.93 4.24 4.24\"}],[\"$\",\"path\",\"1cb5xl\",{\"d\":\"m14.83 9.17 4.24-4.24\"}],[\"$\",\"path\",\"q42g0n\",{\"d\":\"m14.83 14.83 4.24 4.24\"}],[\"$\",\"path\",\"bqpfvv\",{\"d\":\"m9.17 14.83-4.24 4.24\"}],[\"$\",\"circle\",\"4exip2\",{\"cx\":\"12\",\"cy\":\"12\",\"r\":\"4\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-slate-100\",\"children\":\"Human-in-the-loop workflows\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-slate-300\",\"children\":\"Let bots and automations ping operators for approvals, reviews, or quick answers without leaving Telegram.\"}],[\"$\",\"ul\",null,{\"className\":\"mt-2 flex flex-col gap-2 text-sm text-slate-300\",\"children\":[[\"$\",\"li\",\"Embed action links in every message\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Embed action links in every message\"}]]}],[\"$\",\"li\",\"Track responses directly inside the dashboard\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Track responses directly inside the dashboard\"}]]}],[\"$\",\"li\",\"Escalate automatically when nobody reacts\",{\"className\":\"flex items-start gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70\"}],[\"$\",\"span\",null,{\"children\":\"Escalate automatically when nobody reacts\"}]]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"22:[\"$\",\"p\",null,{\"className\":\"font-semibold text-slate-100\",\"children\":\"Heads-up\"}]\n23:[\"$\",\"p\",null,{\"className\":\"mt-2\",\"children\":\"When something goes wrong, we notify you inside your Telegram chat and via email, including quick actions to resend or disable a key.\"}]\n"])</script><script>self.__next_f.push([1,"29:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n25:null\n"])</script><script>self.__next_f.push([1,"2d:I[80622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"27:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Telegram Webhook Relay | AgentCraft\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Deliver any webhook payload directly to your Telegram chat. Configure your chat ID once, POST JSON with a message field, and we handle instant delivery.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"AgentCraft,n8n automations,SaaS builder,automation SaaS,workflow monetization,no-code SaaS\"}],[\"$\",\"meta\",\"3\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"link\",\"4\",{\"rel\":\"canonical\",\"href\":\"https://agentcraft.pro/tg-webhook\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:title\",\"content\":\"AgentCraft | Launch SaaS Products from n8n Automations\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:description\",\"content\":\"Convert n8n workflows into multi-tenant SaaS with billing, dashboards, and analytics powered by AgentCraft.\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:url\",\"content\":\"https://agentcraft.pro\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:site_name\",\"content\":\"AgentCraft\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image\",\"content\":\"https://agentcraft.pro/og/agentcraft-og.jpg\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:image:alt\",\"content\":\"AgentCraft SaaS platform for n8n automations\"}],[\"$\",\"meta\",\"14\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:site\",\"content\":\"@agentcraft\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:creator\",\"content\":\"@agentcraft\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:title\",\"content\":\"AgentCraft | Launch SaaS from n8n Automations\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:description\",\"content\":\"Productize your n8n automations as SaaS with AgentCraft billing, dashboards, and analytics.\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image\",\"content\":\"https://agentcraft.pro/og/agentcraft-og.jpg\"}],[\"$\",\"link\",\"21\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"22\",{\"rel\":\"icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"23\",{\"rel\":\"apple-touch-icon\",\"href\":\"/favicon.png\"}],[\"$\",\"$L2d\",\"24\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"2c:\"$27:metadata\"\n"])</script><next-route-announcer style="position: absolute;"></next-route-announcer><script nonce="">((e,t,n,r,a,o,l,s)=>{let i=document.documentElement,c=["light","dark"];function u(t){var n;(Array.isArray(e)?e:[e]).forEach(e=>{let n="class"===e,r=n&&o?a.map(e=>o[e]||e):a;n?(i.classList.remove(...r),i.classList.add(o&&o[t]?o[t]:t)):i.setAttribute(e,t)}),n=t,s&&c.includes(n)&&(i.style.colorScheme=n)}if(r)u(r);else try{let e=localStorage.getItem(t)||n,r=l&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;u(r)}catch(e){}})("class","theme","light",null,["light","dark"],null,true,true)</script><script id="yandex-metrika">
+                (function(m,e,t,r,i,k,a){
+                  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}
+                  m[i].l=1*new Date()
+                  for (var j = 0; j < document.scripts.length; j++) {
+                    if (document.scripts[j].src === r) { return; }
+                  }
+                  k=e.createElement(t),a=e.getElementsByTagName(t)[0],
+                  k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym(102587019, "init", {
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+              </script><main class="flex min-h-screen flex-col bg-gradient-to-br from-[#04040c] via-[#060a1c] to-[#101b3a] text-slate-100"><header class="sticky top-0 z-40 border-b border-white/10 bg-[#050817]/80 backdrop-blur"><div class="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6"><a class="flex items-center gap-2 font-semibold text-slate-200" href="#hero"><span class="rounded-full bg-cyan-400/10 px-2 py-1 text-xs uppercase tracking-[0.18em] text-cyan-300">AgentCraft</span><span class="text-sm font-medium text-slate-400">Telegram Webhook Relay</span></a><nav class="hidden items-center gap-6 text-sm font-medium text-slate-400 md:flex"><a href="#features" class="transition-colors hover:text-cyan-200">Features</a><a href="#how-it-works" class="transition-colors hover:text-cyan-200">How it Works</a><a href="#use-cases" class="transition-colors hover:text-cyan-200">Use Cases</a><a href="#pricing" class="transition-colors hover:text-cyan-200">Pricing</a><a href="#faq" class="transition-colors hover:text-cyan-200">FAQ</a></nav><div class="flex items-center gap-3"><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:border-foreground h-9 rounded-md px-3 text-slate-300 hover:text-cyan-200 hover:bg-cyan-500/10" href="#how-it-works">Docs</a><a target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-9 rounded-md px-3 shadow-sm bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400" href="https://webhook-tg.saas.agentcraft.pro/end-user/dashboard">Login</a></div></div></header><section id="hero" class="relative overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#050816] via-[#07112b] to-[#111c3d]"><div class="absolute inset-x-0 top-0 -z-10 h-[520px] bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.45),_transparent_55%)] blur-3xl"></div><div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-20 text-center md:pb-32 md:pt-32"><div class="mx-auto flex max-w-2xl flex-col gap-6"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-cyan-200">Instant Telegram alerts</span><h1 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 sm:text-5xl">Bridge any webhook to Telegram with one luminous endpoint</h1><p class="text-balance text-base text-slate-300 sm:text-lg">Configure
+ your Telegram chat ID once, then forward every critical notification by
+ POSTing a single message field. No bots to host, no rate-limit 
+headaches—just reliable delivery when it matters.</p></div><div class="flex flex-col items-center justify-center gap-3 sm:flex-row"><a target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-11 rounded-md px-8 shadow-lg shadow-cyan-500/30 bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400" href="https://webhook-tg.saas.agentcraft.pro/end-user/dashboard">Start routing alerts<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-background hover:border-foreground h-11 rounded-md px-8 border border-slate-500/60 bg-white/5 text-slate-200 hover:bg-white/10" href="#how-it-works">See how it works</a></div><div class="mx-auto w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-6 text-left shadow-[0_0_40px_rgba(56,189,248,0.12)]"><p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">Example request</p><pre class="mt-3 overflow-x-auto rounded-xl bg-[#0b1226] p-4 text-sm text-cyan-200 shadow-inner shadow-cyan-500/20">curl -X POST "https://webhook-tg.saas.agentcraft.pro/webhook/20251108-84fd-4faa-9038-0ac04cc7b265" \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: ac_sk_123456_76e240e4-1e45-47" \
+  -d '{ "message": "test" }'</pre><p class="mt-3 text-sm text-slate-300">We
+ forward the content to your Telegram chat instantly and store the 
+payload for delivery history. Replace the webhook URL and API key with 
+your own credentials before sending production traffic.</p></div></div></section><section id="features" class="border-b border-white/10 bg-transparent py-20 md:py-28"><div class="mx-auto flex max-w-6xl flex-col gap-12 px-6"><div class="mx-auto flex max-w-3xl flex-col gap-4 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Why teams choose us</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Purpose-built for webhook to Telegram delivery</h2><p class="text-base text-slate-300 md:text-lg">Stop maintaining custom bots and brittle scripts. Keep your webhook logic simple while we handle Telegram delivery at scale.</p></div><div class="grid gap-6 md:grid-cols-3"><article class="group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><h3 class="text-lg font-semibold text-slate-100">Instant message delivery</h3><p class="text-sm text-slate-300">Send a POST request with a JSON payload, and we deliver the message to Telegram within seconds.</p></article><article class="group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><h3 class="text-lg font-semibold text-slate-100">Secure chat binding</h3><p class="text-sm text-slate-300">Each webhook key is tied to your Telegram chat ID, preventing unwanted forwarding and keeping alerts private.</p></article><article class="group flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_45px_-25px_rgba(59,130,246,0.45)] transition hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_25px_60px_-25px_rgba(99,102,241,0.55)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow h-10 w-10 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-2 text-cyan-300 transition group-hover:text-fuchsia-300" aria-hidden="true"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg><h3 class="text-lg font-semibold text-slate-100">Workflow friendly</h3><p class="text-sm text-slate-300">Trigger the webhook from Zapier, n8n, Make, or custom code. Works anywhere you can send HTTPS requests.</p></article></div></div></section><section id="how-it-works" class="border-b border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent py-20 md:py-28"><div class="mx-auto flex max-w-6xl flex-col gap-12 px-6"><div class="mx-auto flex max-w-3xl flex-col gap-4 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">No-code setup</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Three simple steps from webhook to Telegram chat</h2><p class="text-base text-slate-300 md:text-lg">Bring your own automation platform, choose the chat that should receive messages, and let AgentCraft deliver the rest.</p></div><div class="grid gap-8 md:grid-cols-3"><article class="relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur"><span class="inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Step 1</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot h-10 w-10 text-cyan-300" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><h3 class="text-lg font-semibold text-slate-100">Add your Telegram chat</h3><p class="text-sm text-slate-300">Log in and paste the chat ID you want to receive notifications in. We generate a dedicated webhook endpoint for you.</p></article><article class="relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur"><span class="inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Step 2</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow h-10 w-10 text-cyan-300" aria-hidden="true"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg><h3 class="text-lg font-semibold text-slate-100">Call the webhook</h3><p class="text-sm text-slate-300">POST a JSON body like { "message": "Server CPU at 85%" } from any system. Additional fields are stored for logs.</p></article><article class="relative flex flex-col gap-4 rounded-2xl border border-dashed border-cyan-400/30 bg-white/5 p-6 backdrop-blur"><span class="inline-flex w-fit rounded-full border border-white/20 bg-[#0b1226] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Step 3</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3 lucide-clock-3 h-10 w-10 text-cyan-300" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg><h3 class="text-lg font-semibold text-slate-100">Telegram delivers</h3><p class="text-sm text-slate-300">We send the message to your chat instantly, adding context like timestamps so your team can act fast.</p></article></div></div></section><section id="use-cases" class="border-b border-white/10 bg-transparent py-20 md:py-28"><div class="mx-auto flex max-w-6xl flex-col gap-12 px-6"><div class="mx-auto flex max-w-3xl flex-col gap-4 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Where it shines</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Designed for high-signal notifications</h2><p class="text-base text-slate-300 md:text-lg">Cut through noisy inboxes and surface the moments humans need to act on. The webhook relay keeps sensitive data inside Telegram.</p></div><div class="grid gap-6 md:grid-cols-3"><article class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-ring h-10 w-10 text-fuchsia-300" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M22 8c0-2.3-.8-4.3-2-6"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path><path d="M4 2C2.8 3.7 2 5.7 2 8"></path></svg><h3 class="text-lg font-semibold text-slate-100">Operational alerts</h3><p class="text-sm text-slate-300">Forward infrastructure or CI/CD alerts straight to Telegram so on-call engineers react in seconds.</p><ul class="mt-2 flex flex-col gap-2 text-sm text-slate-300"><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Connect monitoring tools with one webhook URL</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Broadcast to team chats or personal inboxes</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Keep context with structured payload storage</span></li></ul></article><article class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity h-10 w-10 text-fuchsia-300" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg><h3 class="text-lg font-semibold text-slate-100">Business notifications</h3><p class="text-sm text-slate-300">Send payment confirmations, onboarding events, or CRM updates right to the people who need to know.</p><ul class="mt-2 flex flex-col gap-2 text-sm text-slate-300"><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Create customer-specific channels with unique chat IDs</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Attach order references or invoice links in the payload</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Share instantly with sales or success teams</span></li></ul></article><article class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_-25px_rgba(236,72,153,0.35)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy h-10 w-10 text-fuchsia-300" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg><h3 class="text-lg font-semibold text-slate-100">Human-in-the-loop workflows</h3><p class="text-sm text-slate-300">Let bots and automations ping operators for approvals, reviews, or quick answers without leaving Telegram.</p><ul class="mt-2 flex flex-col gap-2 text-sm text-slate-300"><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Embed action links in every message</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Track responses directly inside the dashboard</span></li><li class="flex items-start gap-2"><span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-fuchsia-400/70"></span><span>Escalate automatically when nobody reacts</span></li></ul></article></div></div></section><section class="border-b border-white/10 bg-gradient-to-r from-[#0b1226] via-[#111c3d] to-[#1b2558] py-20 md:py-28"><div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 md:flex-row md:items-center md:gap-16"><div class="flex-1 space-y-6"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Built for reliability</span><h2 class="text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Observability and safety are included out of the box</h2><p class="text-base text-slate-300 md:text-lg">Every
+ delivery attempt is logged with status, latency, and payload metadata. 
+Configure retention policies per webhook key, export logs, and receive 
+weekly reliability summaries.</p><div class="grid gap-4 sm:grid-cols-2"><div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur"><h3 class="text-sm font-semibold text-slate-100">Automatic retries</h3><p class="mt-2 text-sm text-slate-300">Exponential backoff with jitter keeps your messages safe even when Telegram takes a pause.</p></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur"><h3 class="text-sm font-semibold text-slate-100">Delivery analytics</h3><p class="mt-2 text-sm text-slate-300">Success rate, median latency, and failure reasons available directly in the dashboard.</p></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur"><h3 class="text-sm font-semibold text-slate-100">Access controls</h3><p class="mt-2 text-sm text-slate-300">Rotate keys, restrict source IPs, and receive alerts when unauthorised calls happen.</p></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur"><h3 class="text-sm font-semibold text-slate-100">Human friendly logs</h3><p class="mt-2 text-sm text-slate-300">Search payload history, resend messages, or download JSON for auditing in seconds.</p></div></div></div><div class="flex-1 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_30px_80px_-35px_rgba(56,189,248,0.55)]"><div class="flex items-center justify-between"><div><p class="text-sm font-medium text-slate-400">30-day delivery success rate</p><p class="mt-3 text-4xl font-semibold text-slate-100">99.98%</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-12 w-12 text-cyan-300" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></div><p class="mt-6 text-sm text-slate-300">Resilient
+ delivery pipelines, monitoring integrations, and alerting for degraded 
+performance keep your team informed without manual babysitting.</p><div class="mt-8 rounded-2xl border border-dashed border-cyan-400/30 bg-[#0b1226]/80 p-6 text-sm text-slate-300"><p class="font-semibold text-slate-100">Heads-up</p><p class="mt-2">When
+ something goes wrong, we notify you inside your Telegram chat and via 
+email, including quick actions to resend or disable a key.</p></div></div></div></section><section id="pricing" class="border-b border-white/10 bg-transparent py-20 md:py-28"><div class="mx-auto flex max-w-4xl flex-col gap-10 px-6 text-center"><div class="mx-auto flex max-w-3xl flex-col gap-4 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Pricing</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Simple pricing while we are in beta</h2><p class="text-base text-slate-300 md:text-lg">Get started in minutes. No usage surprises—just straightforward pricing designed for lean teams.</p></div><div class="rounded-3xl border border-white/10 bg-white/5 p-10 shadow-[0_30px_80px_-40px_rgba(168,85,247,0.6)]"><p class="text-sm font-medium uppercase tracking-[0.24em] text-slate-400">Public beta</p><p class="mt-4 text-5xl font-semibold text-slate-100">Free</p><p class="mt-4 text-base text-slate-300">1,000 messages per month, delivery logs, retry automation, and a hosted helper bot.</p><div class="mt-8 flex flex-col gap-3 text-sm text-slate-300"><p>Need higher limits or on-premise deployment?</p><p>Contact us via <a class="text-cyan-200 underline-offset-4 hover:underline" href="mailto:support@agentcraft.pro">support@agentcraft.pro</a>.</p></div></div></div></section><section id="faq" class="border-b border-white/10 bg-gradient-to-br from-[#0f1833] via-[#101e41] to-transparent py-20 md:py-28"><div class="mx-auto flex max-w-4xl flex-col gap-10 px-6"><div class="mx-auto flex max-w-3xl flex-col gap-4 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Questions</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Answers before you ship</h2><p class="text-base text-slate-300 md:text-lg">If you need something custom, reach out—our team is happy to help.</p></div><div class="space-y-4"><details class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur"><summary class="cursor-pointer list-none text-base font-semibold text-slate-100">What payload format does the webhook accept?</summary><p class="mt-3 text-sm text-slate-300">Send
+ a POST request with the Content-Type set to application/json. The body 
+must contain a message field. Any other fields are stored and shown in 
+delivery logs.</p></details><details class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur"><summary class="cursor-pointer list-none text-base font-semibold text-slate-100">Can I send messages to multiple Telegram chats?</summary><p class="mt-3 text-sm text-slate-300">Not
+ yet. Right now each account can bind the service to a single Telegram 
+chat ID. Multi-chat routing is on our roadmap—reach out if you need it.</p></details><details class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur"><summary class="cursor-pointer list-none text-base font-semibold text-slate-100">Is message delivery reliable?</summary><p class="mt-3 text-sm text-slate-300">We
+ queue and retry messages automatically. If Telegram is temporarily 
+unavailable, we keep retrying with exponential backoff and show status 
+updates in the dashboard.</p></details><details class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition backdrop-blur"><summary class="cursor-pointer list-none text-base font-semibold text-slate-100">How do I find my Telegram chat ID?</summary><p class="mt-3 text-sm text-slate-300">Open
+ the dashboard and follow the built-in step-by-step guide—we walk you 
+through starting a helper bot and copying the chat ID in under a minute.</p></details></div></div></section><section class="bg-gradient-to-br from-[#1b1f51] via-[#151c3f] to-[#0b1126] py-20 md:py-28"><div class="mx-auto flex max-w-4xl flex-col items-center gap-8 px-6 text-center"><span class="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[#0b1226]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-cyan-200">Ready when you are</span><h2 class="text-balance text-3xl font-semibold tracking-tight text-slate-100 md:text-4xl">Login, paste your chat ID, and route your first alert in under a minute</h2><p class="text-balance text-base text-slate-300 md:text-lg">Keep
+ your incident response, sales updates, and customer workflows inside 
+Telegram. We take care of the integration and reliability.</p><div class="flex flex-col items-center gap-3 sm:flex-row"><a target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary-foreground hover:text-primary hover:border-primary h-11 rounded-md px-8 shadow-lg shadow-cyan-500/30 bg-gradient-to-r from-cyan-500 via-blue-500 to-fuchsia-500 text-slate-900 hover:from-cyan-400 hover:via-blue-400 hover:to-fuchsia-400" href="https://webhook-tg.saas.agentcraft.pro/end-user/dashboard">Login<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-background hover:border-foreground h-11 rounded-md px-8 border border-slate-500/60 bg-white/5 text-slate-200 hover:bg-white/10" href="mailto:support@agentcraft.pro">Talk to us</a></div></div></section><footer class="border-t border-white/10 bg-[#050817] py-10"><div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between"><p>© 2025 AgentCraft. All rights reserved.</p><div class="flex items-center gap-4"><a class="transition hover:text-cyan-200" target="_blank" rel="noreferrer" href="https://agentcraft.pro/">agentcraft.pro</a><a class="transition hover:text-cyan-200" href="mailto:support@agentcraft.pro">support@agentcraft.pro</a></div></div></footer></main><noscript></noscript><script src="Telegram%20Webhook%20Relay%20_%20AgentCraft_files/243221218_002.js" type="text/javascript" id="hs-script-loader" async="" defer="defer" data-nscript="afterInteractive"></script><iframe style="display: none; visibility: hidden;" owner="archetype" title="archetype"></iframe></body><div id="immersive-translate-browser-popup" style="all: initial"></div></html>

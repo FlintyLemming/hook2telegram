@@ -1,0 +1,14 @@
+{
+  "name": "hook2telegram",
+  "version": "0.1.0",
+  "description": "Webhook relay that forwards JSON payloads to a Telegram bot chat.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
